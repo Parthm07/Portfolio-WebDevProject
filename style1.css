@@ -1,184 +1,438 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style1.css" />
-    <title>PARTH MUNDRA — PORTFOLIO</title>
-  </head>
+* {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
 
-  <body>
-    <nav class="nav">
-      <a href="#top" id="nav-logo">PM</a>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
-    <section class="landing-page">
-      <h1 id="Curious">Curious</h1>
-      <h1 id="AND">AND</h1>
-      <h1 id="Energetic">Energetic</h1>
-      <h1 id="Thatsme">That's Me!</h1>
-    </section>
+body {
+    background-color: #1c1b16;
+}
 
-    <section class="Intro">
-      <div class="intro-des">
-        <h2 id="name">Parth Mundra</h2>
-        <p class="intro-content">Computer Science Student</p>
-        <p class="intro-content">Technology</p>
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background: #16181f;
+    border-bottom: 3px solid #dcd7c4;
+}
 
-        <p class="intro-content">Entrepreneurship</p>
+.nav * {
+    font-size: 18px;
+    margin: 1vw;
+    color: #dcd7c4;
+}
 
-        <p class="intro-content">Explorer</p>
-      </div>
-      <img
-        src="https://media.licdn.com/dms/image/v2/D5603AQGl_Dxu-D1vLg/profile-displayphoto-scale_400_400/B56Z8pRUFZGsAg-/0/1783103834607?e=1792627200&v=beta&t=IG6pM_qXemHF6o7tUQsuuclSfrb9Zj5NGXLrXw7NULs"
-        alt="Profile.jpeg"
-        id="photo"
-      />
-    </section>
+.nav>* {
+    margin: 5vh;
+    margin-left: 20vw;
+}
 
-    <section class="About" id="about">
-      <h2>About</h2>
+a {
+    text-decoration: none;
+}
 
-      <h3>Education</h3>
+#nav-logo {
+    margin: 5vh;
+    margin-left: 10vw;
 
-      <div id="education-container">
-        <p class="education">
-          <strong>2026 - 2030</strong> | SCALER SCHOOL OF TECHNOLOGY
-        </p>
-        <br />
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 1 px;
+    color: #e9e4d3;
+}
 
-        <p class="role-education">Computer Science</p>
-        <br />
-        <p class="education"><strong>2016 - 2022</strong> | SICA SCHOOL</p>
-        <br />
-        <p class="role-education">School Education</p>
-      </div>
+.nav-links>* {
+    margin: 5vh;
+    margin-left: 5vw;
+}
 
-      <h3 id="interests">Interests</h3>
-      <div class="interests">
-        <p>Artificial Intelligence</p>
-        <p>Automation</p>
-        <p>Software Development</p>
-        <p>Entrepreneurship</p>
-        <p>Product Development</p>
-        <p>Technology & Innovation</p>
-      </div>
+/* Till here was Nav bar CSS */
 
-      <h3 id="skills">Skills</h3>
-      <div class="skills">
-        <p>JAVA</p>
-        <p>HTML & CSS</p>
-        <p>Python — Learning</p>
-        <p>Microsoft Office</p>
-        <p>Problem Solving</p>
-      </div>
-    </section>
-    <section class="Projects" id="projects">
-      <h2>Projects</h2>
-      <div id="cardlens">
-        <h3>Cardlens- A Credit Card Auditor</h3>
-        <div class="iframe-cardlens">
-          <iframe
-            src="https://staging.cardlens.co.in/"
-            title="My Project Website"
-            frameborder="0"
-          ></iframe>
-          <a href="https://staging.cardlens.co.in/">Website</a>
-        </div>
-        <p>
-          Tech Stack- Python 3.12 · FastAPI · PyMuPDF · PostgreSQL 16 (psycopg
-          3) · Docker Compose · AWS Lightsail · Cloudflare Tunnel · Google OAuth
-          2.0/OIDC · AES-256-GCM · vanilla JS
-        </p>
-      </div>
-    </section>
+/* Now Starts the Landing Page */
+.landing-page h1 {
+    font-size: 10vh;
+    margin: 0px;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fade-up 0.7s ease forwards;
+}
 
-    <section class="Experience" id="experience">
-      <h2>Experience</h2>
-      <div class="experience-container">
-        <div id="stationmart">
-          <h3>StationMart</h3>
+@keyframes fade-up {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
-          <p>
-            <strong>Co-Founder / Design & Operations</strong>
-          </p>
+#Curious {
+    font-size: 20vh;
+    color: #e9e4d3;
+    letter-spacing: 1vw;
+    margin-left: 15vw;
+    
+    animation-delay: 0.3s;
+    transition: color 0.3s ease;
+}
 
-          <p>
-            Worked with my elder brother on a stationery business that started
-            online and later expanded to an outlet.
-          </p>
+#Curious:hover {
+    color: #e3a76b;
+}
+#AND {
+    font-size: 8vh;
+    text-align: center;
+    letter-spacing: 2vw;
+    color: #8f8b7c;
+    animation-delay: 0.2s;
+}
 
-          <ul>
-            <li>Designed the logo, pamphlets, catalogues and packaging.</li>
-            <li>Managed inventory and day-to-day operations.</li>
-            <li>Worked with Vyapar for business and inventory management.</li>
-            <li>Managed business presence through Justdial.</li>
-            <li>
-              Created a bulk WhatsApp messaging workflow using Excel and
-              automation software.
-            </li>
-            <li>Experienced first-hand how a buisness is run</li>
-          </ul>
+#Energetic {
+    font-size: 20vh;
+    color: #e9e4d3;
+    text-align: end;
+    letter-spacing: 1vw;
+    margin-right: 10vw;
+    animation-delay: 0.3s;
+    transition: color 0.3s ease;
+}
 
-          <p>
-            The business was eventually shut down because it was not scaling in
-            the way we expected. The experience gave me practical exposure to
-            entrepreneurship and execution.
-          </p>
-        </div>
+#Energetic:hover {
+    color: #e3a76b;
+}
 
-        <div id="roughlymade">
-          <h3>RoughlyMade</h3>
+#Thatsme {
+    font-size: 20vw;
+    color: #dcd7c4;
+    animation-delay: 0.4s;
+}
 
-          <p>
-            <strong>Co-Founder / Product Exploration</strong>
-          </p>
+/* Now comes the intro */
 
-          <p>
-            Explored molded-fibre packaging solutions as an alternative to
-            conventional plastic packaging.
-          </p>
+.Intro {
+    border-top: 2px solid rgba(220, 215, 196, 0.12);
+    background: #25241d;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    margin: 1vh;
+}
 
-          <ul>
-            <li>Researched potential applications and market opportunities.</li>
-            <li>
-              Explored product concepts based on the aesthetic appeal of molded
-              fibre.
-            </li>
-            <li>
-              Evaluated manufacturing constraints and minimum order quantities.
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
+#photo {
+    border-radius: 50%;
+}
 
-    <footer class="Contact" id="contact">
-      <h2>Let's Connect</h2>
-      <div>
-        <div>
-          <p id="contact-sentence">
-            Always open to connecting with people who likes what they are doing.
-          </p>
-        </div>
-        <div id="contact-details">
-          <a href="mailto:parthakmundra@gmail.com"> parthakmundra@gmail.com </a>
+#name {
+    font-size: 17vh;
+    margin-bottom: 0px;
+    color: #e9e4d3;
+}
 
-          <p>|</p>
-          <a
-            href="https://www.linkedin.com/in/parth-mundra-921b1a226/"
-            target="_blank"
-            id="linkedin"
-          >
-            LinkedIn
-          </a>
-        </div>
-      </div>
-    </footer>
-  </body>
-</html>
+.intro-content {
+    display: inline-flex;
+    border: 2px solid rgba(220, 215, 196, 0.25);
+    border-radius: 20px;
+    font-size: 3vh;
+    padding: 10px;
+    margin: 4px;
+    color: #c9c4b4;
+}
+
+/* Now starts About Section */
+
+.About {
+    margin: 1vh;
+    background: #201f18;
+    border-radius: 20px;
+}
+
+.About h2 {
+    font-size: 13vh;
+    border-bottom: 3px solid #dcd7c4;
+    margin: 4vw;
+    margin-bottom: 0px;
+    color: #e9e4d3;
+}
+
+.About h3 {
+    font-size: 5vh;
+    margin-left: 8vw;
+    color: #dcd7c4;
+}
+
+#education-container {
+    margin-left: 9vw;
+}
+
+.education {
+    display: inline-block;
+    font-size: 3vh;
+    background: #26251e;
+    padding: 10px 16px;
+    border-left: 4px solid #dcd7c4;
+    border-radius: 0 10px 10px 0;
+    color: #c9c4b4;
+}
+
+.education strong {
+    color: #e9e4d3;
+}
+
+.role-education {
+    display: inline-block;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding: 7px 14px;
+    border: 1px solid rgba(220, 215, 196, 0.2);
+    border-radius: 50px;
+    background: #26251e;
+    color: #c9c4b4;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.interests {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    margin-left: 8vw;
+    margin-right: 8vw;
+}
+
+.interests p {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5vh;
+    padding: 7px 14px;
+    border: 2px solid rgba(220, 215, 196, 0.2);
+    border-radius: 50px;
+    background: #26251e;
+    color: #c9c4b4;
+    font-size: 17px;
+    font-weight: 500;
+    margin-right: 15px;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    margin-left: 8vw;
+    margin-right: 8vw;
+}
+
+.skills p {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5vh;
+    padding: 7px 14px;
+    border: 2px solid rgba(220, 215, 196, 0.2);
+    border-radius: 50px;
+    background: #26251e;
+    color: #c9c4b4;
+    font-size: 17px;
+    font-weight: 500;
+    margin-right: 15px;
+}
+
+/* About section is ended */
+/* Now starts Experience */
+.Experience h2 {
+    font-size: 13vh;
+    border-bottom: 3px solid #dcd7c4;
+    margin: 4vw;
+    margin-bottom: 0px;
+    color: #e9e4d3;
+}
+
+.Experience {
+    margin: 1vh;
+    background: #201f18;
+    border-radius: 20px;
+}
+
+.experience-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#stationmart {
+    margin-left: 3vw;
+    border: 5px solid rgba(220, 215, 196, 0.22);
+    padding: 15px;
+    margin-top: 4vh;
+    width: 40vw;
+    border-radius: 50px;
+    background: #26251e;
+    box-shadow: 2px 2px 2px 2px;
+}
+
+#stationmart h3,
+#roughlymade h3,
+#cardlens h3 {
+    font-size: 5vh;
+    color: #e9e4d3;
+}
+
+#roughlymade {
+    margin-left: 3vw;
+    border: 5px solid rgba(220, 215, 196, 0.22);
+    padding: 15px;
+    margin-top: 4vh;
+    width: 40vw;
+    border-radius: 50px;
+    background: #26251e;
+    box-shadow: 2px 2px 2px 2px;
+}
+
+#stationmart p,
+#stationmart ul,
+#roughlymade p,
+#roughlymade ul {
+    color: #a39f91;
+    font-size: 17px;
+}
+
+#stationmart>p>strong {
+    color: #e9e4d3;
+    font-size: 20px;
+}
+
+#roughlymade>p>strong {
+    color: #e9e4d3;
+    font-size: 20px;
+}
+
+/* Projects section */
+.Projects {
+    margin: 1vh;
+    background: #201f18;
+    border-radius: 20px;
+}
+
+.Projects h2 {
+    font-size: 13vh;
+    border-bottom: 3px solid #dcd7c4;
+    margin: 4vw;
+    margin-bottom: 0px;
+    color: #e9e4d3;
+}
+
+#cardlens {
+    margin: 4vh 3vw 0;
+    border: 5px solid rgba(220, 215, 196, 0.22);
+    padding: 20px;
+    border-radius: 30px;
+    background: #26251e;
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+#cardlens:hover {
+    transform: translateY(-6px);
+    border-color: rgba(220, 215, 196, 0.5);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+.iframe-cardlens {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 14px 0;
+}
+
+.iframe-cardlens iframe {
+    width: 100%;
+    height: 420px;
+    border: 1px solid rgba(220, 215, 196, 0.2);
+    border-radius: 16px;
+}
+
+.iframe-cardlens a {
+    align-self: flex-start;
+    background: #e9e4d3;
+    color: #1c1b16;
+    font-weight: 700;
+    padding: 10px 24px;
+    border-radius: 50px;
+    transition: background 0.2s ease;
+}
+
+.iframe-cardlens a:hover {
+    background: #ffffff;
+}
+
+#cardlens p {
+    color: #a39f91;
+    font-size: 17px;
+}
+
+.Contact {
+    background: #17160f;
+    color: #e9e4d3;
+    margin: 0;
+}
+
+.Contact h2 {
+    font-size: 25vh;
+    text-align: center;
+    margin-bottom: 0;
+    color: #e9e4d3;
+}
+
+.Contact>div {
+    display: flex;
+    justify-content: space-around;
+}
+
+#contact-sentence {
+    font-size: 6vh;
+    width: 30vw;
+    color: #c9c4b4;
+}
+
+#contact-details {
+    color: #e9e4d3;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+#contact-details>* {
+    font-size: 26px;
+    color: #e9e4d3;
+    margin: 0;
+}
+
+/* Hover animations */
+.intro-content,
+.interests p,
+.skills p,
+.role-education {
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.intro-content:hover,
+.interests p:hover,
+.skills p:hover,
+.role-education:hover {
+    transform: translateY(-3px);
+    background: #ece7d8;
+    border-color: #ece7d8;
+    color: #1c1b16;
+}
+
+#stationmart,
+#roughlymade {
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+#stationmart:hover,
+#roughlymade:hover {
+    transform: translateY(-6px);
+    border-color: rgba(220, 215, 196, 0.5);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
