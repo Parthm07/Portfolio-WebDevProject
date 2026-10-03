@@ -1,0 +1,414 @@
+* {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+    background-color: #1c1b16;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background: #16181f;
+    border-bottom: 3px solid #dcd7c4;
+}
+
+.nav * {
+    font-size: 18px;
+    margin: 1vw;
+    color: #dcd7c4;
+}
+
+.nav>* {
+    margin: 5vh;
+    margin-left: 20vw;
+}
+
+a {
+    text-decoration: none;
+}
+
+#nav-logo {
+    margin: 5vh;
+    margin-left: 10vw;
+
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 1 px;
+    color: #e9e4d3;
+}
+
+.nav-links>* {
+    margin: 5vh;
+    margin-left: 5vw;
+}
+
+/* Till here was Nav bar CSS */
+
+/* Now Starts the Landing Page */
+.landing-page h1 {
+    font-size: 10vh;
+    margin: 0px;
+}
+
+#Curious {
+    font-size: 20vh;
+    color: #e9e4d3;
+    letter-spacing: 1vw;
+    margin-left: 15vw;
+}
+
+#AND {
+    font-size: 8vh;
+    text-align: center;
+    letter-spacing: 2vw;
+    color: #8f8b7c;
+}
+
+#Energetic {
+    font-size: 20vh;
+    color: #e9e4d3;
+    text-align: end;
+    letter-spacing: 1vw;
+    margin-right: 10vw;
+}
+
+#Thatsme {
+    font-size: 20vw;
+    color: #dcd7c4;
+}
+
+/* Now comes the intro */
+
+.Intro {
+    border-top: 2px solid rgba(220, 215, 196, 0.12);
+    background: #25241d;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    margin: 1vh;
+}
+
+#photo {
+    border-radius: 50%;
+}
+
+#name {
+    font-size: 17vh;
+    margin-bottom: 0px;
+    color: #e9e4d3;
+}
+
+.intro-content {
+    display: inline-flex;
+    border: 2px solid rgba(220, 215, 196, 0.25);
+    border-radius: 20px;
+    font-size: 3vh;
+    padding: 10px;
+    margin: 4px;
+    color: #c9c4b4;
+}
+
+/* Now starts About Section */
+
+.About {
+    margin: 1vh;
+    background: #201f18;
+    border-radius: 20px;
+}
+
+.About h2 {
+    font-size: 13vh;
+    border-bottom: 3px solid #dcd7c4;
+    margin: 4vw;
+    margin-bottom: 0px;
+    color: #e9e4d3;
+}
+
+.About h3 {
+    font-size: 5vh;
+    margin-left: 8vw;
+    color: #dcd7c4;
+}
+
+#education-container {
+    margin-left: 9vw;
+}
+
+.education {
+    display: inline-block;
+    font-size: 3vh;
+    background: #26251e;
+    padding: 10px 16px;
+    border-left: 4px solid #dcd7c4;
+    border-radius: 0 10px 10px 0;
+    color: #c9c4b4;
+}
+
+.education strong {
+    color: #e9e4d3;
+}
+
+.role-education {
+    display: inline-block;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding: 7px 14px;
+    border: 1px solid rgba(220, 215, 196, 0.2);
+    border-radius: 50px;
+    background: #26251e;
+    color: #c9c4b4;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.interests {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    margin-left: 8vw;
+    margin-right: 8vw;
+}
+
+.interests p {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5vh;
+    padding: 7px 14px;
+    border: 2px solid rgba(220, 215, 196, 0.2);
+    border-radius: 50px;
+    background: #26251e;
+    color: #c9c4b4;
+    font-size: 17px;
+    font-weight: 500;
+    margin-right: 15px;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    margin-left: 8vw;
+    margin-right: 8vw;
+}
+
+.skills p {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5vh;
+    padding: 7px 14px;
+    border: 2px solid rgba(220, 215, 196, 0.2);
+    border-radius: 50px;
+    background: #26251e;
+    color: #c9c4b4;
+    font-size: 17px;
+    font-weight: 500;
+    margin-right: 15px;
+}
+
+/* About section is ended */
+/* Now starts Experience */
+.Experience h2 {
+    font-size: 13vh;
+    border-bottom: 3px solid #dcd7c4;
+    margin: 4vw;
+    margin-bottom: 0px;
+    color: #e9e4d3;
+}
+
+.Experience {
+    margin: 1vh;
+    background: #201f18;
+    border-radius: 20px;
+}
+
+.experience-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#stationmart {
+    margin-left: 3vw;
+    border: 5px solid rgba(220, 215, 196, 0.22);
+    padding: 15px;
+    margin-top: 4vh;
+    width: 40vw;
+    border-radius: 50px;
+    background: #26251e;
+    box-shadow: 2px 2px 2px 2px;
+}
+
+#stationmart h3,
+#roughlymade h3,
+#cardlens h3 {
+    font-size: 5vh;
+    color: #e9e4d3;
+}
+
+#roughlymade {
+    margin-left: 3vw;
+    border: 5px solid rgba(220, 215, 196, 0.22);
+    padding: 15px;
+    margin-top: 4vh;
+    width: 40vw;
+    border-radius: 50px;
+    background: #26251e;
+    box-shadow: 2px 2px 2px 2px;
+}
+
+#stationmart p,
+#stationmart ul,
+#roughlymade p,
+#roughlymade ul {
+    color: #a39f91;
+    font-size: 17px;
+}
+
+#stationmart>p>strong {
+    color: #e9e4d3;
+    font-size: 20px;
+}
+
+#roughlymade>p>strong {
+    color: #e9e4d3;
+    font-size: 20px;
+}
+
+/* Projects section */
+.Projects {
+    margin: 1vh;
+    background: #201f18;
+    border-radius: 20px;
+}
+
+.Projects h2 {
+    font-size: 13vh;
+    border-bottom: 3px solid #dcd7c4;
+    margin: 4vw;
+    margin-bottom: 0px;
+    color: #e9e4d3;
+}
+
+#cardlens {
+    margin: 4vh 3vw 0;
+    border: 5px solid rgba(220, 215, 196, 0.22);
+    padding: 20px;
+    border-radius: 30px;
+    background: #26251e;
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+#cardlens:hover {
+    transform: translateY(-6px);
+    border-color: rgba(220, 215, 196, 0.5);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+.iframe-cardlens {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 14px 0;
+}
+
+.iframe-cardlens iframe {
+    width: 100%;
+    height: 420px;
+    border: 1px solid rgba(220, 215, 196, 0.2);
+    border-radius: 16px;
+}
+
+.iframe-cardlens a {
+    align-self: flex-start;
+    background: #e9e4d3;
+    color: #1c1b16;
+    font-weight: 700;
+    padding: 10px 24px;
+    border-radius: 50px;
+    transition: background 0.2s ease;
+}
+
+.iframe-cardlens a:hover {
+    background: #ffffff;
+}
+
+#cardlens p {
+    color: #a39f91;
+    font-size: 17px;
+}
+
+.Contact {
+    background: #17160f;
+    color: #e9e4d3;
+    margin: 0;
+}
+
+.Contact h2 {
+    font-size: 25vh;
+    text-align: center;
+    margin-bottom: 0;
+    color: #e9e4d3;
+}
+
+.Contact>div {
+    display: flex;
+    justify-content: space-around;
+}
+
+#contact-sentence {
+    font-size: 6vh;
+    width: 30vw;
+    color: #c9c4b4;
+}
+
+#contact-details {
+    color: #e9e4d3;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+#contact-details>* {
+    font-size: 26px;
+    color: #e9e4d3;
+    margin: 0;
+}
+
+/* Hover animations */
+.intro-content,
+.interests p,
+.skills p,
+.role-education {
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.intro-content:hover,
+.interests p:hover,
+.skills p:hover,
+.role-education:hover {
+    transform: translateY(-3px);
+    background: #ece7d8;
+    border-color: #ece7d8;
+    color: #1c1b16;
+}
+
+#stationmart,
+#roughlymade {
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+#stationmart:hover,
+#roughlymade:hover {
+    transform: translateY(-6px);
+    border-color: rgba(220, 215, 196, 0.5);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
